@@ -6,7 +6,7 @@ app.use(express.static(__dirname + '/dist/XALLISSFRONTFINAL'));
 
 app.get('/*', function(req,res){
 
-res.sendFile(path(__dirname+'/dist/XALLISSFRONTFINAL/index.html'));
+  res.sendFile(path.join(__dirname +'/dist/XALLISSFRONTFINAL/index.html'));
 
 });
 
